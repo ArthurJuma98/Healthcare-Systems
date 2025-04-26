@@ -112,9 +112,14 @@ backend/
 
 ---
 
-## 📽️ Prototype Demonstration
+## 📽️ Prototype Demonstration link
 
-(video)
+(video) - https://drive.google.com/file/d/1CTGdi1Gf6C2kQR2kQW2LPTtEFRNlopjx/view?usp=drive_link
+
+---
+
+## 📽️ Powerpoint presentation link
+(structure) - https://docs.google.com/presentation/d/1--PmGd9vGNfAuxZpziKGkrpWSFqs9qNr/edit?usp=drive_link&ouid=112183997985551338282&rtpof=true&sd=true
 
 ---
 
