@@ -15,3 +15,19 @@ exports.getClients = async (req, res) => {
     const clients = await Client.find(query);
     res.json(clients);
 };
+
+exports.getClientProfile = async (req, res) => {
+    const client = await Client.findById(req.params.id).populate('enrolledPrograms');
+    if (!client) return res.status(400).json({ message: 'client not found!' });
+    res.json(client);
+};
+
+exports.enrollClient = async (req, res) => {
+    const { programIds } = req.body;
+    const client = await Client.findById(req.params.id);
+    if (!client) return res.status(404).json({ message: 'Client not found' });
+
+    client.enrolledPrograms.push(...programIds);
+    await client.save();
+    res.json({ message: 'Client enrolled successfully', client });
+};
